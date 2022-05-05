@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <main className="container">
+      <main className="max-w-screen-md m-auto overflow-auto .py-0 .px-10px">
         <Component {...pageProps} />
       </main>
     </>

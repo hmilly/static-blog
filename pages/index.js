@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Post from "../components/Post";
-import {sortByDate} from "../fns"
+import { sortByDate } from "../fns";
 
 export default function Home({ posts }) {
   return (
@@ -13,7 +13,7 @@ export default function Home({ posts }) {
       </Head>
       <div className="blog-posts">
         {posts.map((post, i) => (
-          <Post key={i} post={post}/>
+          <Post key={i} post={post} />
         ))}
       </div>
     </div>

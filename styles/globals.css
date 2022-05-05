@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,24 +25,6 @@ a {
 img {
   width: 100%;
   border-radius: 10px;
-}
-
-header {
-  background: #204a6d;
-  color: #fff;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-header a {
-  color: #fff;
-}
-
-.container {
-  max-width: 768px;
-  margin: auto;
-  overflow: auto;
-  padding: 0 10px;
 }
 
 .btn {
@@ -106,9 +92,6 @@ li {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
-}
-.blog-body h2 {
-  text-decoration: underline;
 }
 
 @media (max-width: 500px) {
