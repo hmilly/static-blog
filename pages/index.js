@@ -11,7 +11,10 @@ export default function Home({ posts }) {
       <Head>
         <title>Blog</title>
       </Head>
-      <div className="blog-posts">
+      <div
+        className=" g-media-q grid grid-cols-2 grid-rows-2 gap-8
+      "
+      >
         {posts.map((post, i) => (
           <Post key={i} post={post} />
         ))}
