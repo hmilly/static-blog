@@ -12,7 +12,7 @@ export default function Home({ posts }) {
         <title>Blog</title>
       </Head>
       <div
-        className=" g-media-q grid grid-cols-2 grid-rows-2 gap-8
+        className="  grid grid-cols-1 grid-rows-2 gap-8 sm:grid-cols-2
       "
       >
         {posts.map((post, i) => (

@@ -18,7 +18,7 @@ export default function PostPage({
         </a>
       </Link>
       <div className="my-5">
-        <h1 className="font-medium p-2 text-blue-700 text-center">{title}</h1>
+        <h1 className="text-xl p-2 underline text-blue-600 text-center">{title}</h1>
         <div className="px-1 bg-blue-100 my-3">Posted on: {date}</div>
         <img src={cover_image} alt={title} />
         <div className="blog-body">

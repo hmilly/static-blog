@@ -4,19 +4,24 @@ import Link from "next/link";
 export default function Post({ post }) {
   return (
     <div
-      className="g-box-shadow p-4 rounded-lg shadow-lg grid content-evenly gap-2
-    "
+      className=" min-w-[300px] p-4 shadow-lg rounded-lg 
+      grid gap-2 border"
     >
-      <img src={post.frontmatter.cover_image} alt={post.title}></img>
+      <img
+        className="w-full h-auto rounded-lg"
+        src={post.frontmatter.cover_image}
+        alt={post.title}
+      />
       <div className="px-1 bg-blue-100">{post.frontmatter.date}</div>
-      <h3 className="font-medium p-2 text-blue-700">
+      <h2 className="text-lg p-2 underline text-blue-700">
         {post.frontmatter.title}
-      </h3>
-      <p>{post.frontmatter.excerpt}</p>
+      </h2>
+      <p className="h-32">{post.frontmatter.excerpt}</p>
       <Link href={`/blog/${post.slug}`}>
         <a
-          className="
-        bg-blue-800 text-white py-2 px-4 rounded cursor-pointer no-underline focus:no-underline hover:scale-95 place-self-end
+          className=" bg-blue-800 text-white py-2 px-4
+          rounded place-self-end cursor-pointer
+          focus:no-underline hover:scale-95 
         "
         >
           Read more

@@ -6,7 +6,7 @@ export default function header() {
     <header className=".mb-10px bg-blue-900 p-2">
       <div className="max-w-screen-md m-auto overflow-auto .py-0 .px-10px">
         <Link href="/">
-          <h2 className="underline text-white">Blog</h2>
+          <h1 className="text-xl text-white">Blog</h1>
         </Link>
       </div>
     </header>

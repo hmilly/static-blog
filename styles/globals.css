@@ -2,37 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.g-box-shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-p {
-  margin: 15px 0;
-  line-height: 1.5;
-}
-h1 {
-  font-size: 20px;
-}
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 /*  dangerously set html stylings: */
 .blog-body ul,
+p {
+  padding: 15px;
+}
+h2 {
+  text-decoration: underline;
+  font-size: larger;
+}
 ol {
   font-size: 100%;
   font-weight: bold;
   margin: 20px 0 20px 35px;
+  list-style-type: disc;
 }
 li {
   padding: 10px 0;
@@ -43,10 +26,4 @@ li {
   margin: 20px 0;
   line-height: 2.3;
   overflow-x: scroll;
-}
-
-@media (max-width: 500px) {
-  .g-media-q {
-    grid-template-columns: 1fr;
-  }
 }
